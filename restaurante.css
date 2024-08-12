@@ -1,0 +1,84 @@
+#centro{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+#pesquisa:hover #busca{
+    color: rgb(209, 127, 34);
+}
+#pesquisa{
+ width: 100%;
+}
+#busca{
+    transition: 0.35s;
+}
+
+#lista li{
+    margin-left: 0.5ch;
+    margin-top: 0.8ch;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    font-size: 160%;
+}
+#btn:hover{
+    background-color: rgb(209, 127, 34);
+    border: solid;
+    border-color: rgb(255, 255, 255);
+}
+#btn:hover #btb{
+    color: rgb(255, 255, 255);
+}
+
+#mall{
+    margin-left: 13.75%;
+    display:grid;
+    grid-template-columns: 800px 800px;
+    grid-template-rows: 230px 230px 230px 230px 230px;
+}
+#opt{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 0;
+    border-right: solid;
+    border-bottom: solid;
+    color:  rgb(209, 127, 34);
+    border-radius: 2%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+#imag{
+    margin-top: -0.15%;
+    margin-left: -0.75%;
+    background-size: cover;
+    border: 0;
+    width: 350px;
+    height: 227px;
+}
+#delet{
+    transition: 0.5s;
+    text-align: center;
+    justify-content: center;
+    opacity: 0%;
+    width: 350px;
+    height: 229px;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: rgb(209, 127, 34);
+}
+#opt:hover #delet{
+    opacity: 100%
+}
+#delet:hover #opt{
+    visibility: hidden;
+}
+#opt:active{
+    display: none; 
+}
+#porcao{
+    height: 75%;
+    color: rgb(0, 0, 0);
+    list-style: none;
+    width: 20ch;
+
+}
+

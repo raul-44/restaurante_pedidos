@@ -1,0 +1,670 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/619d5231f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="restaurante.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0;">
+
+
+
+<div id="centro">
+<div style="width: 13.75%; background-color: rgb(209, 127, 34); height: 100%; position: fixed;">
+  
+    <div id="lista">
+      <li style="margin-top:3ch; margin-bottom: 1ch;"><b>Coloque seu endereço:</b></li>
+      <li> <input type="text" style="font-size: 75%; width: 45.5%;" placeholder="Nome"><input type="text" style="font-size: 75%; width: 45.5%;" placeholder="text"> </li>
+      <li> <input type="email" style="font-size: 75%;" placeholder="Email"> </li>
+      <li> <input type="number" style="font-size: 75%;" placeholder="Telefone"> </li>
+      <li> <input type="text" style="font-size: 75%;" placeholder="Endereço"> </li>
+      <li> <input type="text" style="font-size: 75%;" placeholder="Cidade"> </li>
+      <li> <input type="text" style="font-size: 75%;" placeholder="Estado"> </li>
+      <li> <input type="number" style="font-size: 75%;" placeholder="CEP"> </li>
+      <li> <input type="text" style="font-size: 75%;" placeholder="País"> </li>
+      <li> <button style="background-color: rgb(255, 255, 255); font-size: 110%; width: 96%; border: 0; border-radius: 2.5%; color:  rgb(209, 127, 34);">
+          <b>PEDIR</b>
+      </button></li>
+
+      <button id="btn" style="background-color: rgb(255, 255, 255);margin-top: 150%;height: 5ch ; border-radius: 0%; border: 0; text-align: center; width: 100%;">
+       <a href="https://raul-44.github.io/restaurante_inicio/"><b id="btb" style="font-size: 150%;color: rgb(209, 127, 34);">INÍCIO</b></a>
+       <button id="btn" style="background-color: rgb(255, 255, 255);margin-top: 3%;height: 5ch ; border-radius: 0%; border: 0; text-align: center; width: 100%;">
+        <a href="https://raul-44.github.io/restaurante_busca/"><b id="btb" style="font-size: 150%;color: rgb(209, 127, 34);">BUSCA</b></a>
+       </button>
+      </button>
+      <button id="btn" style="background-color: rgb(255, 255, 255);margin-top: 3%;height: 5ch ; border-radius: 0%; border: 0; text-align: center; width: 100%;">
+        <a href=""><b id="btb" style="font-size: 150%;color: rgb(209, 127, 34);">SOBRE NÓS</b></a>
+       </button>
+      <button id="btn" style="background-color: rgb(255, 255, 255);margin-top: 3%;height: 5ch ; border-radius: 0%; border: 0; text-align: center; width: 100%;">
+        <a href=""><b id="btb" style="font-size: 150%;color: rgb(209, 127, 34);">CONTATO</b></a>
+       </button>
+       <button id="btn" style="background-color: rgb(255, 255, 255);margin-top: 3%;height: 5ch ; border-radius: 0%; border: 0; text-align: center; width: 100%;">
+        <a href="https://raul-44.github.io/restaurante_login/"><b id="btb" style="font-size: 150%;color: rgb(209, 127, 34);">CADASTRO</b></a>
+       </button>
+       
+    </div>      
+    
+</div>
+
+    <div id="mall">
+
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(black-bean-and-vegetable-burritos.webp);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+    </button>
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(WKF-925-Always-On_blog_1920x1080-1920x1080.webp);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+    </button>
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(receita-de-pao-de-alho-para-churrasco.webp);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+    </button>
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(apstl-2.jpeg);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+      
+    </button>
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(l-intro-1649958010.jpg);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+      
+    </button>
+
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(queijo-branco.webp);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+      
+    </button>
+
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(Cuscuz-Paulista2-659x371-1.jpg);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+      
+    </button>
+
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(shutterstock_399135895.jpg);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+      
+    </button>
+
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(spinach-quiche-with-onion-bacon-2.jpg);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+      
+    </button>
+
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(377829b055e89e3afb894e7528a10996_XL.jpg);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+      
+    </button>
+
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(depositphotos_151960846-stock-photo-acaraje-traditional-brazilian-fritters-made.jpg);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+      
+    </button>
+
+    <button type="checkbox" id="opt">
+      <div id="imag" style="background-image: url(333845-original.jpg);">
+       <div id="delet"><i class="fa-solid fa-trash fa-2xl" style="margin-top: 30%;"></i>
+      <li style="list-style: none; margin-top: 1ch;"><b>DELETAR PEDIDO</b></li>
+       </div>
+      </div>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%;">Pedidos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>1º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>2º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>3º</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>4º</b></a>
+        </div>
+      </li>
+      <li id="porcao" style="border-right: solid;">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Tamanho</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$20,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$25,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <li id="porcao">
+        <div style="display: grid;">
+          <b style="font-size: 150%; display: grid;">Acrecimos</b>
+          <a style="visibility: hidden; font-size: 150%;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$10,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+          <a style="visibility: hidden;">a</a>
+          <a style="font-size: 120%;"><b>R$00,00</b></a>
+        </div>
+      </li>
+      <div style="width: 50ch; height: 25ch; position: absolute; margin-top: 10.35%; margin-left: 20.25%;">
+        <b style="font-size: 150%;">TOTAL:</b><b style="font-size: 130%;"> R$65,00</b>
+      </div>
+      
+    </button>
+      </div>
+
+
+
+
+
+
+      <div style="right: 0%; position:fixed; width: 2.25%; height: 100%; background-color: rgb(209, 127, 34);">
+        
+      </div>   
+    </div> 
+ 
+</body>
+</html>
